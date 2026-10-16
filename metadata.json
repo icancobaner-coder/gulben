@@ -1,0 +1,6 @@
+{
+  "name": "ZIP — The Gülben Edition",
+  "description": "Gülben'e özel, LinkedIn ZIP oyunundan ilham alan interaktif ve sinematik doğum günü deneyimi.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

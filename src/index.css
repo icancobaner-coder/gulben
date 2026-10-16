@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #080D19;
+    color: #F8FAFC;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+/* Custom glow utilities */
+.glow-electric {
+  filter: drop-shadow(0 0 12px rgba(79, 124, 255, 0.75)) drop-shadow(0 0 24px rgba(167, 139, 250, 0.4));
+}
+
+.glow-soft {
+  box-shadow: 0 0 35px -5px rgba(79, 124, 255, 0.25), 0 0 15px -3px rgba(167, 139, 250, 0.2);
+}
+
+.glow-checkpoint {
+  box-shadow: 0 0 20px 2px rgba(79, 124, 255, 0.5), inset 0 0 10px rgba(167, 139, 250, 0.3);
+}
+
+/* Smooth background shimmer for highlighted quote */
+@keyframes gradient-flow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-gradient-flow {
+  background-size: 200% auto;
+  animation: gradient-flow 6s ease infinite;
+}
+
+/* Ensure no accidental dragging or selection in game */
+.no-select {
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
